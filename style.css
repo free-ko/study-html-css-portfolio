@@ -311,15 +311,15 @@ p {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 280px;
-    height: 250px;
-    margin: 2px;
+    width: 250px;
+    height: 220px;
+    margin: 2Px;
     background-color: var(--color-light-white);
 }
 
 .project__img {
-    max-width: 100%;
-    max-height: 100%;
+    max-width: 80%;
+    max-height: 80%;
 }
 
 .project__description {
@@ -398,4 +398,33 @@ p {
 
 .testimonial__speech-bubble a {
     color: var(--color-pink);
+}
+
+
+/* Contact */
+#contact {
+    background-color: var(--color-blue);
+}
+
+.contact__title,
+.contact__email,
+.contact__rights {
+    color: var(--color-white);
+}
+
+.contact__title {
+    margin: 32px 0;
+}
+
+.contact__links {
+    font-size: var(--font-large);
+    margin: 24px 0;
+}
+
+.contact__links i {
+    transition: all var(--animation-duration) ease-in;
+}
+
+.contact__links i:hover {
+    transform: scale(1.1);
 }

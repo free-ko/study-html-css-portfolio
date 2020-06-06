@@ -126,6 +126,15 @@ p {
 
 }
 
+.navbar__toggle_btn {
+    position: absolute;
+    top: 24px;
+    right: 32px;
+    font-size: 24px;
+    color: var(--color-white);
+    display: none;
+}
+
 /* Home */
 #home {
     background: url('imgs/home_background2.png') center/cover no-repeat;
@@ -427,4 +436,24 @@ p {
 
 .contact__links i:hover {
     transform: scale(1.1);
+}
+
+/* 미디어 쿼리는 최소한의 css만 넣어야되고 html에 있는 것들은 위에서 스타일 적용하는 것이 좋음 */
+/* For below 768px screen width */
+@media screen and (max-width: 768px) {
+    .navbar__toggle_btn {
+        display: block;
+    }
+
+    #navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navbar__menu {
+        flex-direction: column;
+        text-align: center;
+        width: 100%;
+        display: none;
+    }
 }

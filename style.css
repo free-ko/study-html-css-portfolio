@@ -456,4 +456,26 @@ p {
         width: 100%;
         display: none;
     }
+
+    .about__majors {
+        flex-direction: column;
+    }
+
+    .major {
+        margin-bottom: 38px;
+    }
+
+    .skillset {
+        flex-direction: column;
+    }
+
+    .project {
+        /* 알아서 화면에 맞게 메꾸어 것 */
+        flex-grow: 1;
+    }
+
+    .testimonial__avatar {
+        width: 80px;
+        height: 80px;
+    }
 }

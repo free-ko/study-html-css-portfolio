@@ -93,22 +93,31 @@ p {
 
 /* NavBar */
 #navbar {
+    position: fixed;
+    width: 100%;
     display: flex;
     justify-content: space-between;
-    background-color: var(--color-blue);
     align-items: center;
-    color: var(--color-white);
     padding: 16px;
+    background-color: transparent;
+    transition: all var(--animation-duration) ease-in-out;
+}
+
+#navbar.navbar--dark {
+    background-color: var(--color-blue);
+    padding: 8px;
+}
+
+.navbar__logo {
+    font-size: var(--font-medium);
+    font-weight: var(--weight-semi-bold);
+    color: white;
 }
 
 .navbar__menu {
     display: flex;
 }
 
-.navbar__logo {
-    font-size: var(--font-medium);
-    font-weight: var(--weight-semi-bold);
-}
 
 .navbar__menu__item {
     padding: 8px 12px;
@@ -139,6 +148,7 @@ p {
 #home {
     background: url('imgs/home_background2.png') center/cover no-repeat;
     padding: 40px;
+    padding-top: 120px;
     text-align: center;
 }
 

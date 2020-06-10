@@ -101,6 +101,7 @@ p {
     padding: 16px;
     background-color: transparent;
     transition: all var(--animation-duration) ease-in-out;
+    z-index: 1;
 }
 
 #navbar.navbar--dark {
@@ -120,6 +121,7 @@ p {
 
 
 .navbar__menu__item {
+    color: var(--color-white);
     padding: 8px 12px;
     margin: 0 4px;
     cursor: pointer;

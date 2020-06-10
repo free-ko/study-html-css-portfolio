@@ -1,5 +1,6 @@
 "use strict";
 
+// 스크롤 내리면 메뉴 생성
 const navbar = document.querySelector("#navbar");
 const navbarHeight = navbar.getBoundingClientRect().height; //높이 가져오기
 
@@ -12,4 +13,20 @@ document.addEventListener("scroll", () => {
   } else {
     navbar.classList.remove("navbar--dark");
   }
+});
+
+
+// Handle scrolling when tapping on the navbar menu (메뉴 누르면 그 장소로 가기)
+const navbarMenu = document.querySelector('.navbar__menu')
+navbarMenu.addEventListener('click', (event) => {
+  const target = event.target;
+  const link = target.dataset.link;
+  if (link == null) {
+    return;
+  }
+  console.log(event.target.dataset.link);
+  const scrollTo = document.querySelector(link);
+  scrollTo.scrollIntoView({
+    behavior: 'smooth'
+  });
 });

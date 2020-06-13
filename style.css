@@ -450,6 +450,27 @@ p {
     transform: scale(1.1);
 }
 
+/* Scroll */
+.arrow-up {
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    width: 60px;
+    height: 60px;
+    font-size: 40px;
+    color: var(--color-white);
+    background-color: var(--color-blue);
+    border-radius: 50%;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 250ms ease-in;
+}
+
+.arrow-up.visible {
+    opacity: 1;
+    pointer-events: auto;
+}
+
 /* 미디어 쿼리는 최소한의 css만 넣어야되고 html에 있는 것들은 위에서 스타일 적용하는 것이 좋음 */
 /* For below 768px screen width */
 @media screen and (max-width: 768px) {

@@ -338,6 +338,10 @@ p {
     background-color: var(--color-light-white);
 }
 
+.project.invisible {
+    display: none;
+}
+
 .project__img {
     max-width: 80%;
     max-height: 80%;

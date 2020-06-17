@@ -134,7 +134,7 @@ p {
     background-color: var(--color-aqua);
 }
 
-.navbar__toggle_btn {
+.navbar__toggle-btn {
     position: absolute;
     top: 24px;
     right: 32px;
@@ -482,7 +482,7 @@ p {
 /* 미디어 쿼리는 최소한의 css만 넣어야되고 html에 있는 것들은 위에서 스타일 적용하는 것이 좋음 */
 /* For below 768px screen width */
 @media screen and (max-width: 768px) {
-    .navbar__toggle_btn {
+    .navbar__toggle-btn {
         display: block;
     }
 

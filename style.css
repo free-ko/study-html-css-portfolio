@@ -173,7 +173,7 @@ p {
 }
 
 .home__contact:hover {
-    background-color: color var(--color-blue);
+    background-color: var(--color-blue);
 }
 
 /* Section common*/
